@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 class AppTest {
 
     @Test
-    void testRunPrototype() {
-        assertDoesNotThrow(() -> App.runPrototype());
+    void testRunBuilder() {
+        assertDoesNotThrow(() -> App.main(new String[]{}));
     }
 }

@@ -14,8 +14,8 @@ public class App {
         }
 private static void runBuilder() {
        Pizza pizza = new PizzaBuilder().build();
-        
         System.out.println(pizza.descripcion());
+        
     }
 
     private static void runPrototype() {
@@ -24,7 +24,6 @@ private static void runBuilder() {
         PlantillaEmail pEmailSolicitud = pEmail.clone();
         pEmailSolicitud.setAsunto("Solicitud");
 
-        System.out.println(pEmailSolicitud.contenido());
         System.out.println(pEmail.contenido());
     }
 
